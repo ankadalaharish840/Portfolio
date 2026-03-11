@@ -1,52 +1,16 @@
-# 🌟 Harish Ankadala - Portfolio
+# React + Vite
 
-> A modern, responsive portfolio website showcasing my projects, skills, and professional journey.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-**Tech Stack**: React | Vite | Tailwind CSS | Framer Motion
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🚀 Quick Start
+## React Compiler
 
-```bash
-npm install
-npm run dev
-```
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Visit http://localhost:5173
+## Expanding the ESLint configuration
 
----
-
-## ✨ Features
-
-- 🎨 **Modern Design** - Glassmorphism, gradients, and smooth animations
-- 📱 **Fully Responsive** - Works on all devices
-- ⚡ **Fast Performance** - Built with Vite for optimal speed
-- 🌙 **Dark Theme** - Eye-friendly dark mode design
-- 🔄 **Smooth Animations** - Framer Motion powered interactions
-
----
-
-## 📁 Sections
-
-1. **Hero** - Introduction with stats and call-to-action
-2. **Projects** - Showcase of all developed applications
-3. **Technologies** - Skills and tech stack overview
-4. **Updates** - Timeline of recent releases and updates
-5. **Contact** - Ways to get in touch
-
----
-
-## 🛠️ Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-
----
-
-## 📄 License
-
-MIT License
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
