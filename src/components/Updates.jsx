@@ -3,15 +3,15 @@ import { motion } from 'framer-motion'
 const updates = [
   {
     date: 'February 2026',
-    title: 'Claims Processing System v2.0',
-    description: 'Major UI overhaul with futuristic glassmorphism design. Added bulk operations, enhanced PDF management, and comprehensive audit trails.',
+    title: 'FileFlingr Multi-Platform Rollout',
+    description: 'Expanded FileFlingr support across Windows, iOS, Android, and Mac with smoother transfers and cleaner storage workflows.',
     type: 'release',
     icon: 'rocket_launch',
   },
   {
     date: 'February 2026',
-    title: 'HRMS Project Started',
-    description: 'Started development of Human Resource Management System using Next.js 15 with TypeScript and modern architecture.',
+    title: 'Expense Tracker - iOS + Android Sync',
+    description: 'Unified Expense Tracker experience across iOS and Android with consistent backup and privacy controls.',
     type: 'new',
     icon: 'add_circle',
   },
@@ -28,13 +28,6 @@ const updates = [
     description: 'Launched billing software with AI-powered sales forecasting, inventory management, and comprehensive reporting.',
     type: 'release',
     icon: 'receipt_long',
-  },
-  {
-    date: 'January 2026',
-    title: 'Attendance Tracker - Error Tracking',
-    description: 'Added comprehensive error tracking with Winston logger, database logging, and exportable error reports.',
-    type: 'feature',
-    icon: 'bug_report',
   },
   {
     date: 'December 2025',
