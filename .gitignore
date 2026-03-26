@@ -1,0 +1,20 @@
+# Node / package managers
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
