@@ -67,7 +67,7 @@ CHANGES TO THIS PRIVACY POLICY
 If we change what we do with your data, we will update this page and the "Last updated" date. For major changes, we may also show an in-app notice. Continued use after changes means you accept the updated policy.
 
 CONTACT
-LocalCoreLabs — support@localcorelabs.com`
+LocalCoreLabs — Localcorelabs@gmail.com`
 
 const ET_TERMS = `Terms of Service — Expense Tracker
 Last updated: March 23, 2026
@@ -122,7 +122,7 @@ These Terms are governed by the laws of India. Disputes will be handled in the c
 We may update these Terms as features change or laws require. We will update the "Last updated" date and may show an in-app notice. Continued use after changes means you accept the new Terms.
 
 CONTACT
-LocalCoreLabs — support@localcorelabs.com
+LocalCoreLabs — Localcorelabs@gmail.com
 
 By using Expense Tracker, you confirm you've read and agreed to these Terms. If you actually read all of this: you're our kind of person.`
 
@@ -146,9 +146,9 @@ const DEFAULT_CONTENT = {
     releaseDate: '2026-03-23',
     features: ['Local Transfer', 'Internet Transfer', 'Smart Compression', 'Storage Cleanup'],
     privacyPolicySummary: 'FileFlingr transfers files directly between your devices. We do not collect file contents, transfer history, or analytics data of any kind. What you move stays between you and the destination.',
-    privacyPolicy: 'FileFlingr transfers files directly between devices using local network or internet connections. We do not collect, store, or transmit your file contents to any server operated by LocalCoreLabs. No analytics, no behavior tracking, no data profiling. The app is a conduit — your files are yours.\n\nOptional compression features run entirely on your device.\n\nContact: support@localcorelabs.com',
+    privacyPolicy: 'FileFlingr transfers files directly between devices using local network or internet connections. We do not collect, store, or transmit your file contents to any server operated by LocalCoreLabs. No analytics, no behavior tracking, no data profiling. The app is a conduit — your files are yours.\n\nOptional compression features run entirely on your device.\n\nContact: Localcorelabs@gmail.com',
     termsSummary: 'A personal license to transfer and manage files for lawful purposes on your own devices. Do not use FileFlingr to share malicious, illegal, or infringing content. Provided as-is without warranty.',
-    termsAndConditions: 'FileFlingr is provided as a personal, non-transferable tool for lawful file transfer and compression on your own devices.\n\nYou must not use FileFlingr to transfer, distribute, or store content that is malicious, illegal, harmful, or violates third-party intellectual property rights.\n\nLocalCoreLabs owns the app code and design. You own your files. The app is provided "as is" without warranty. We are not liable for data loss during transfer — always keep backups of important files.\n\nContact: support@localcorelabs.com',
+    termsAndConditions: 'FileFlingr is provided as a personal, non-transferable tool for lawful file transfer and compression on your own devices.\n\nYou must not use FileFlingr to transfer, distribute, or store content that is malicious, illegal, harmful, or violates third-party intellectual property rights.\n\nLocalCoreLabs owns the app code and design. You own your files. The app is provided "as is" without warranty. We are not liable for data loss during transfer — always keep backups of important files.\n\nContact: Localcorelabs@gmail.com',
     lastUpdated: '2026-03-23',
   },
   cashclown: {
@@ -158,9 +158,9 @@ const DEFAULT_CONTENT = {
     releaseDate: '2026-03-23',
     features: ['Point of Sale', 'Sales Dashboard', 'Inventory Alerts', 'Import/Export'],
     privacyPolicySummary: 'CashClown stores all billing and sales data in your configured local storage or database. LocalCoreLabs does not have access to your business records and does not sell any business data.',
-    privacyPolicy: 'CashClown stores all business, billing, and inventory data in your configured local storage or database — not on LocalCoreLabs servers. We do not collect, access, or sell your business records.\n\nIf you use import/export features, data is processed locally on your device. No cloud transfer to our servers occurs.\n\nYou are responsible for backing up your own database and keeping your system secure.\n\nContact: support@localcorelabs.com',
+    privacyPolicy: 'CashClown stores all business, billing, and inventory data in your configured local storage or database — not on LocalCoreLabs servers. We do not collect, access, or sell your business records.\n\nIf you use import/export features, data is processed locally on your device. No cloud transfer to our servers occurs.\n\nYou are responsible for backing up your own database and keeping your system secure.\n\nContact: Localcorelabs@gmail.com',
     termsSummary: 'CashClown is a reporting and operations tool — not financial or tax advice. Verify all reports before filing or making financial decisions. Your data, your responsibility.',
-    termsAndConditions: 'CashClown is provided as a business operations and reporting tool. It is not financial, accounting, tax, or legal advice. You are responsible for verifying all reports and figures before making business decisions or filing with any regulatory body.\n\nLocalCoreLabs owns the app code. You own your business data. The app is provided "as is." We are not liable for business decisions made based on app reports.\n\nYou must not use CashClown for fraudulent billing, tax evasion, or any unlawful business activity.\n\nContact: support@localcorelabs.com',
+    termsAndConditions: 'CashClown is provided as a business operations and reporting tool. It is not financial, accounting, tax, or legal advice. You are responsible for verifying all reports and figures before making business decisions or filing with any regulatory body.\n\nLocalCoreLabs owns the app code. You own your business data. The app is provided "as is." We are not liable for business decisions made based on app reports.\n\nYou must not use CashClown for fraudulent billing, tax evasion, or any unlawful business activity.\n\nContact: Localcorelabs@gmail.com',
     lastUpdated: '2026-03-23',
   },
 }

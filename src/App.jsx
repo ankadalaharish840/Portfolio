@@ -11,6 +11,7 @@ import ProjectsIndexPage from './pages/projects/ProjectsIndexPage'
 import ExpenseTrackerPage from './pages/projects/ExpenseTrackerPage'
 import FileFlingrPage from './pages/projects/FileFlingrPage'
 import CashClownPage from './pages/projects/CashClownPage'
+import ProjectLegalDocumentPage from './pages/projects/ProjectLegalDocumentPage'
 import AdminDashboardPage from './pages/AdminDashboardPage'
 
 export const ThemeContext = createContext({ darkMode: false, toggleDark: () => {} })
@@ -39,6 +40,8 @@ export default function App() {
             <Route path="/projects/expense-tracker" element={<ExpenseTrackerPage />} />
             <Route path="/projects/fileflingr" element={<FileFlingrPage />} />
             <Route path="/projects/cashclown" element={<CashClownPage />} />
+            <Route path="/projects/:projectId/privacy" element={<ProjectLegalDocumentPage documentType="privacy" />} />
+            <Route path="/projects/:projectId/terms" element={<ProjectLegalDocumentPage documentType="terms" />} />
             <Route path="/studio-release-control-lcl-9a7f" element={<AdminDashboardPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>

@@ -25,7 +25,7 @@ export default function FileFlingrPage() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 pt-24 pb-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Link to="/projects" className="inline-flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 mb-8 transition-colors">
+        <Link to="/projects" className="inline-flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400 hover:text-violet-600 dark:hover:text-violet-400 mb-8 transition-colors">
           ← Back to Projects
         </Link>
 
@@ -54,12 +54,12 @@ export default function FileFlingrPage() {
                   GitHub →
                 </a>
               )}
-              <a href="#privacy" className="px-5 py-2.5 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl text-sm font-semibold hover:bg-white/30 transition-all">
+              <Link to="/projects/fileflingr/privacy" className="px-5 py-2.5 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl text-sm font-semibold hover:bg-white/30 transition-all">
                 Privacy Policy
-              </a>
-              <a href="#terms" className="px-5 py-2.5 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl text-sm font-semibold hover:bg-white/30 transition-all">
+              </Link>
+              <Link to="/projects/fileflingr/terms" className="px-5 py-2.5 bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl text-sm font-semibold hover:bg-white/30 transition-all">
                 Terms and Conditions
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -79,6 +79,7 @@ export default function FileFlingrPage() {
         </motion.div>
 
         <ProjectLegalPanel
+          projectId="fileflingr"
           projectTitle={projectTitle}
           releaseDate={content.releaseDate}
           privacyPolicySummary={content.privacyPolicySummary}
