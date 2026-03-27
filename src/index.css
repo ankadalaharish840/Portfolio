@@ -28,26 +28,26 @@
   /* ─── Buttons ─── */
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3
-           bg-gradient-to-r from-blue-600 to-violet-600 text-white font-semibold rounded-xl
-           hover:from-blue-700 hover:to-violet-700 transition-all duration-300
-           shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40
+           bg-gradient-to-r from-violet-500 via-fuchsia-500 to-rose-500 text-white font-semibold rounded-xl
+           hover:from-violet-600 hover:via-fuchsia-600 hover:to-rose-600 transition-all duration-300
+           shadow-lg shadow-violet-500/25 hover:shadow-xl hover:shadow-violet-500/40
            hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
   }
 
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3
-           border-2 border-slate-300 text-slate-700 font-semibold rounded-xl
-           hover:border-blue-500 hover:bg-blue-50 hover:text-blue-700
+           border-2 border-violet-300 text-violet-700 font-semibold rounded-xl
+           hover:border-violet-500 hover:bg-violet-50 hover:text-violet-800
            transition-all duration-300 cursor-pointer
-           dark:border-slate-600 dark:text-slate-300
-           dark:hover:border-blue-400 dark:hover:bg-blue-900/20 dark:hover:text-blue-300;
+           dark:border-violet-600 dark:text-violet-300
+           dark:hover:border-violet-400 dark:hover:bg-violet-900/20 dark:hover:text-violet-200;
   }
 
   /* ─── Cards ─── */
   .card {
-    @apply bg-white rounded-2xl border border-slate-200 shadow-sm
-           hover:shadow-lg hover:border-blue-300 transition-all duration-300
-           dark:bg-slate-800 dark:border-slate-700 dark:hover:border-blue-500/50;
+    @apply bg-white rounded-2xl border border-violet-100 shadow-sm
+           hover:shadow-lg hover:border-violet-300 transition-all duration-300
+           dark:bg-slate-800 dark:border-slate-700 dark:hover:border-violet-500/50;
   }
 
   /* Legacy dark card (used in project cards headers) */
@@ -58,13 +58,13 @@
 
   /* ─── Typography ─── */
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 via-violet-600 to-cyan-500
+    @apply bg-gradient-to-r from-violet-600 via-fuchsia-500 to-rose-500
            bg-clip-text text-transparent;
   }
 
   .section-title {
     @apply text-3xl md:text-4xl font-bold text-center mb-4
-           text-slate-900 dark:text-white;
+           text-slate-800 dark:text-white;
   }
 
   .section-subtitle {
@@ -74,27 +74,27 @@
 
   /* ─── Badges ─── */
   .tech-badge {
-    @apply px-3 py-1 bg-blue-50 border border-blue-200 rounded-full
-           text-xs text-blue-700 font-medium
-           dark:bg-blue-900/30 dark:border-blue-700/50 dark:text-blue-300;
+    @apply px-3 py-1 bg-violet-50 border border-violet-200 rounded-full
+           text-xs text-violet-700 font-medium
+           dark:bg-violet-900/30 dark:border-violet-700/50 dark:text-violet-300;
   }
 
   .feature-badge {
-    @apply px-3 py-1 bg-slate-100 rounded-full text-xs text-slate-600 font-medium
-           dark:bg-slate-700 dark:text-slate-300;
+    @apply px-3 py-1 bg-rose-50 rounded-full text-xs text-rose-600 font-medium
+           dark:bg-rose-900/30 dark:text-rose-300;
   }
 
   /* ─── Nav dropdown ─── */
   .nav-dropdown {
     @apply absolute top-full left-1/2 -translate-x-1/2 mt-2 w-52
-           bg-white border border-slate-200 rounded-2xl shadow-xl py-2
+           bg-white border border-violet-100 rounded-2xl shadow-xl py-2
            dark:bg-slate-800 dark:border-slate-700;
   }
 
   .nav-dropdown-item {
     @apply flex items-center gap-2 px-4 py-2 text-sm text-slate-700
-           hover:bg-blue-50 hover:text-blue-700 transition-colors cursor-pointer
-           dark:text-slate-300 dark:hover:bg-blue-900/30 dark:hover:text-blue-300;
+           hover:bg-violet-50 hover:text-violet-700 transition-colors cursor-pointer
+           dark:text-slate-300 dark:hover:bg-violet-900/30 dark:hover:text-violet-300;
   }
 }
 
@@ -107,13 +107,20 @@
 
   .text-balance { text-wrap: balance; }
 
-  /* Noise texture overlay for hero */
+  /* Warm noise texture overlay for hero */
   .hero-pattern {
-    background-image: radial-gradient(circle at 1px 1px, rgba(59,130,246,0.08) 1px, transparent 0);
+    background-image: radial-gradient(circle at 1px 1px, rgba(168,85,247,0.06) 1px, transparent 0);
     background-size: 32px 32px;
   }
 
   .dark .hero-pattern {
-    background-image: radial-gradient(circle at 1px 1px, rgba(59,130,246,0.05) 1px, transparent 0);
+    background-image: radial-gradient(circle at 1px 1px, rgba(168,85,247,0.04) 1px, transparent 0);
+  }
+
+  /* Shimmer effect for loading states */
+  .shimmer-bg {
+    background: linear-gradient(90deg, transparent 0%, rgba(168,85,247,0.1) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
   }
 }

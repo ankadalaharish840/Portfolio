@@ -9,7 +9,7 @@ function GithubIcon() {
   )
 }
 
-const CONTACT_EMAIL = 'ankadalaharish840@gmail.com'
+const CONTACT_EMAIL = 'Localcorelabs@gmail.com'
 
 export default function ContactPage() {
   useEffect(() => {

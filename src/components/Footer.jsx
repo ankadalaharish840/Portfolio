@@ -33,7 +33,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center shadow">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center shadow">
                 <span className="text-white font-bold">L</span>
               </div>
               <span className="font-bold text-lg text-slate-900 dark:text-white">LocalCoreLabs</span>
@@ -43,11 +43,11 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 mt-5">
               <a href="https://github.com/ankadalaharish840" target="_blank" rel="noopener noreferrer"
-                className="p-2 rounded-lg text-slate-400 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors" title="GitHub">
+                className="p-2 rounded-lg text-slate-400 hover:text-violet-600 hover:bg-violet-50 dark:hover:bg-slate-800 transition-colors" title="GitHub">
                 <GithubIcon />
               </a>
-              <a href="mailto:ankadalaharish840@gmail.com"
-                className="p-2 rounded-lg text-slate-400 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors" title="Email">
+              <a href="mailto:Localcorelabs@gmail.com"
+                className="p-2 rounded-lg text-slate-400 hover:text-violet-600 hover:bg-violet-50 dark:hover:bg-slate-800 transition-colors" title="Email">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -62,7 +62,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map(l => (
                 <li key={l.to}>
-                  <Link to={l.to} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <Link to={l.to} className="text-sm text-slate-500 dark:text-slate-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
                     {l.label}
                   </Link>
                 </li>
@@ -76,7 +76,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {projectLinks.map(l => (
                 <li key={l.to}>
-                  <Link to={l.to} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <Link to={l.to} className="text-sm text-slate-500 dark:text-slate-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
                     {l.label}
                   </Link>
                 </li>
@@ -91,7 +91,7 @@ export default function Footer() {
               "Any sufficiently advanced technology is indistinguishable from magic."
             </p>
             <p className="text-xs text-slate-400 dark:text-slate-500 mt-2">— Arthur C. Clarke (and our commit messages)</p>
-            <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-xl text-xs text-blue-700 dark:text-blue-300">
+            <div className="mt-4 p-3 bg-violet-50 dark:bg-violet-900/20 rounded-xl text-xs text-violet-700 dark:text-violet-300">
               🤖 <strong>Bugs?</strong> Those are undocumented features.
             </div>
           </div>
@@ -102,8 +102,8 @@ export default function Footer() {
             © {year} LocalCoreLabs · Made with ☕ in Mumbai
           </p>
           <div className="flex gap-4 text-sm text-slate-400 dark:text-slate-500">
-            <Link to="/projects" className="hover:text-blue-600 transition-colors">Project Privacy Policies</Link>
-            <Link to="/projects" className="hover:text-blue-600 transition-colors">Project Terms & Conditions</Link>
+            <Link to="/projects" className="hover:text-violet-600 transition-colors">Project Privacy Policies</Link>
+            <Link to="/projects" className="hover:text-violet-600 transition-colors">Project Terms & Conditions</Link>
           </div>
         </div>
       </div>

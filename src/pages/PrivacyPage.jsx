@@ -53,8 +53,8 @@ export default function PrivacyPage() {
           </p>
           <p>
             Questions? Complaints? Existential crises about data? Contact us at:{' '}
-            <a href="mailto:ankadalaharish840@gmail.com" className="text-blue-600 dark:text-blue-400 underline">
-              ankadalaharish840@gmail.com
+            <a href="mailto:Localcorelabs@gmail.com" className="text-blue-600 dark:text-blue-400 underline">
+              Localcorelabs@gmail.com
             </a>
           </p>
         </Section>
@@ -139,8 +139,8 @@ export default function PrivacyPage() {
           </ul>
           <p className="mt-2">
             To exercise any right, email us at{' '}
-            <a href="mailto:ankadalaharish840@gmail.com" className="text-blue-600 dark:text-blue-400 underline">
-              ankadalaharish840@gmail.com
+            <a href="mailto:Localcorelabs@gmail.com" className="text-blue-600 dark:text-blue-400 underline">
+              Localcorelabs@gmail.com
             </a>.
             Since most of our apps store data <em>locally on your device</em>, the simplest way to
             exercise your rights is to use the in-app delete/export features.
@@ -169,8 +169,8 @@ export default function PrivacyPage() {
           </p>
           <p>
             📧{' '}
-            <a href="mailto:ankadalaharish840@gmail.com" className="text-blue-600 dark:text-blue-400 underline font-medium">
-              ankadalaharish840@gmail.com
+            <a href="mailto:Localcorelabs@gmail.com" className="text-blue-600 dark:text-blue-400 underline font-medium">
+              Localcorelabs@gmail.com
             </a>
           </p>
           <p>🏙️ Mumbai, Maharashtra, India</p>

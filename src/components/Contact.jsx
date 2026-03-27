@@ -15,8 +15,8 @@ const contactMethods = [
   {
     name: 'Email',
     icon: <span className="material-icons-round">email</span>,
-    href: 'mailto:ankadalaharish840@gmail.com',
-    label: 'ankadalaharish840@gmail.com',
+    href: 'mailto:Localcorelabs@gmail.com',
+    label: 'Localcorelabs@gmail.com',
     color: 'hover:text-white hover:bg-red-500/20 hover:border-red-500/50',
   },
   {
@@ -92,7 +92,7 @@ export default function Contact() {
             I'd love to hear from you.
           </p>
           <a 
-            href="mailto:ankadalaharish840@gmail.com"
+            href="mailto:Localcorelabs@gmail.com"
             className="btn-primary inline-flex items-center gap-2"
           >
             <span className="material-icons-round text-sm">send</span>

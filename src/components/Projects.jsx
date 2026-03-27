@@ -87,10 +87,10 @@ function ProjectCard({ project }) {
           Release Date: <strong>{managed?.releaseDate || 'TBD'}</strong>
         </p>
 
-        <div className="flex items-center gap-2 mt-auto pt-2 border-t border-slate-100 dark:border-slate-700">
+        <div className="flex items-center gap-2 mt-auto pt-2 border-t border-violet-50 dark:border-slate-700">
           <Link
             to={pageLink}
-            className="flex-1 text-center text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-2 transition-colors"
+            className="flex-1 text-center text-xs font-semibold bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:from-violet-600 hover:to-fuchsia-600 text-white rounded-lg py-2.5 transition-all shadow-sm hover:shadow-md"
             title={project.tooltip}
           >
             View Details →
@@ -100,7 +100,7 @@ function ProjectCard({ project }) {
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-2 text-xs font-semibold border border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-300 rounded-lg hover:border-blue-400 hover:text-blue-600 transition-colors"
+              className="px-3 py-2.5 text-xs font-semibold border border-violet-200 dark:border-slate-600 text-violet-600 dark:text-violet-300 rounded-lg hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-900/20 transition-colors"
             >
               GitHub
             </a>
@@ -113,7 +113,7 @@ function ProjectCard({ project }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 md:py-28 bg-white dark:bg-slate-800/30">
+    <section id="projects" className="py-20 md:py-28 bg-gradient-to-b from-white to-violet-50/30 dark:from-slate-800/30 dark:to-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

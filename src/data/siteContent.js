@@ -17,7 +17,7 @@ export const DEFAULT_SITE_CONTENT = {
 
   // ============ CONTACT INFO ============
   contact: {
-    email: 'ankadalaharish840@gmail.com',
+    email: 'Localcorelabs@gmail.com',
     github: 'https://github.com/ankadalaharish840',
     linkedin: 'https://linkedin.com/in/harish-ankadala',
     location: 'Mumbai, India',
@@ -161,7 +161,7 @@ export const DEFAULT_SITE_CONTENT = {
       },
       {
         title: 'Contact',
-        content: 'Questions? Email ankadalaharish840@gmail.com. We respond within 48 hours.',
+        content: 'Questions? Email Localcorelabs@gmail.com. We respond within 48 hours.',
       },
     ],
   },
@@ -238,7 +238,7 @@ We do not collect expense data, track in-app behavior, build profiles, or sell y
 
 Google login (for trial/premium) requires only basic account info — never your passwords or financial data.
 
-Contact: support@localcorelabs.com`,
+Contact: Localcorelabs@gmail.com`,
       termsSummary: 'A personal license to use the app for lawful expense tracking on your own devices. Don\'t hack, reverse-engineer, or clone it.',
       termsAndConditions: `Terms of Service — Expense Tracker
 Last updated: March 23, 2026
@@ -253,19 +253,19 @@ LocalCoreLabs owns the app code. You own your data.
 
 The app is provided "as is" without warranty.
 
-Contact: support@localcorelabs.com`,
+Contact: Localcorelabs@gmail.com`,
     },
     fileflingr: {
       privacyPolicySummary: 'FileFlingr transfers files directly between your devices. We do not collect file contents, transfer history, or analytics.',
-      privacyPolicy: 'FileFlingr transfers files directly between devices using local network or internet connections. We do not collect, store, or transmit your file contents to any server operated by LocalCoreLabs.\n\nContact: support@localcorelabs.com',
+      privacyPolicy: 'FileFlingr transfers files directly between devices using local network or internet connections. We do not collect, store, or transmit your file contents to any server operated by LocalCoreLabs.\n\nContact: Localcorelabs@gmail.com',
       termsSummary: 'A personal license to transfer files for lawful purposes on your own devices.',
-      termsAndConditions: 'FileFlingr is provided as a personal tool for lawful file transfer. Do not use it to share malicious or illegal content.\n\nContact: support@localcorelabs.com',
+      termsAndConditions: 'FileFlingr is provided as a personal tool for lawful file transfer. Do not use it to share malicious or illegal content.\n\nContact: Localcorelabs@gmail.com',
     },
     cashclown: {
       privacyPolicySummary: 'CashClown stores all billing data in your configured local storage. LocalCoreLabs does not have access to your business records.',
-      privacyPolicy: 'CashClown stores all business data in your configured local storage — not on our servers. We do not collect or sell your business records.\n\nContact: support@localcorelabs.com',
+      privacyPolicy: 'CashClown stores all business data in your configured local storage — not on our servers. We do not collect or sell your business records.\n\nContact: Localcorelabs@gmail.com',
       termsSummary: 'CashClown is a reporting tool — not financial or tax advice. Verify all reports before making decisions.',
-      termsAndConditions: 'CashClown is provided as a business operations tool. It is not financial, accounting, or tax advice.\n\nContact: support@localcorelabs.com',
+      termsAndConditions: 'CashClown is provided as a business operations tool. It is not financial, accounting, or tax advice.\n\nContact: Localcorelabs@gmail.com',
     },
   },
 }

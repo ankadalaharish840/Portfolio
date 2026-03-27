@@ -68,8 +68,8 @@ export default function Navbar() {
   const navLinkClass = ({ isActive }) =>
     `text-sm font-medium transition-colors duration-200 ${
       isActive
-        ? 'text-blue-600 dark:text-blue-400'
-        : 'text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400'
+        ? 'text-violet-600 dark:text-violet-400'
+        : 'text-slate-600 hover:text-violet-600 dark:text-slate-300 dark:hover:text-violet-400'
     }`
 
   return (
@@ -88,7 +88,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center shadow-md group-hover:shadow-blue-500/40 transition-all duration-300 group-hover:scale-105">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center shadow-md group-hover:shadow-violet-500/40 transition-all duration-300 group-hover:scale-105">
               <span className="text-white font-bold text-base">L</span>
             </div>
             <span className="font-bold text-lg text-slate-900 dark:text-white hidden sm:block">
@@ -104,7 +104,7 @@ export default function Navbar() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setProjectsOpen(v => !v)}
-                className="flex items-center gap-1 text-sm font-medium text-slate-600 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-400 transition-colors"
+                className="flex items-center gap-1 text-sm font-medium text-slate-600 hover:text-violet-600 dark:text-slate-300 dark:hover:text-violet-400 transition-colors"
               >
                 Projects
                 <motion.svg
@@ -145,7 +145,7 @@ export default function Navbar() {
             <button
               onClick={toggleDark}
               title={darkMode ? 'Switch to light mode' : 'Switch to dark mode (for fun 😄)'}
-              className="p-2 rounded-xl text-slate-500 hover:text-blue-600 hover:bg-blue-50 dark:text-slate-400 dark:hover:text-blue-300 dark:hover:bg-slate-800 transition-all"
+              className="p-2 rounded-xl text-slate-500 hover:text-violet-600 hover:bg-violet-50 dark:text-slate-400 dark:hover:text-violet-300 dark:hover:bg-slate-800 transition-all"
             >
               {darkMode ? <SunIcon /> : <MoonIcon />}
             </button>
@@ -186,7 +186,7 @@ export default function Navbar() {
                 { to: '/contact', label: 'Contact' },
               ].map(({ to, label }) => (
                 <Link key={to} to={to}
-                  className="block py-2.5 px-3 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-800 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">
+                  className="block py-2.5 px-3 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-violet-50 dark:hover:bg-slate-800 hover:text-violet-600 dark:hover:text-violet-400 font-medium transition-colors">
                   {label}
                 </Link>
               ))}
