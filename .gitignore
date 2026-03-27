@@ -16,6 +16,10 @@ dist-ssr
 .env.local
 .env.*.local
 
+# Local admin documentation (contains credentials)
+LOCAL_HOSTING_README.md
+LOCAL_*.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
