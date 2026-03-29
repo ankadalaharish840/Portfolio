@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { FounderPortrait, HumanStoryStrip } from '../components/HumanVisuals'
 
 const timeline = [
   {
@@ -70,18 +71,38 @@ export default function AboutPage() {
         {/* Team card (just Harish) */}
         <motion.div
           initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}
-          className="card p-8 mb-14 flex flex-col sm:flex-row items-center gap-8"
+          className="card p-8 mb-14 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-center"
         >
-          <div className="w-32 h-32 shrink-0 rounded-3xl bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center shadow-xl shadow-blue-500/30 text-6xl select-none">
-            🧑‍💻
-          </div>
           <div>
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-1">Harish Ankadala</h2>
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
               I build tools that simplify the boring, protect your privacy, and occasionally make you laugh.
               Based in Mumbai, fueled by filter coffee, React Native, and the occasional JavaScript stack trace at 2AM.
             </p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              <span className="tech-badge">React Native</span>
+              <span className="tech-badge">Privacy-first UX</span>
+              <span className="tech-badge">Product design</span>
+              <span className="tech-badge">Shipping fast</span>
+            </div>
           </div>
+          <FounderPortrait />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.45 }}
+          className="mb-14"
+        >
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 text-center">
+            What the work looks like day to day
+          </h2>
+          <p className="text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8">
+            Less stock-photo startup theater. More real making, quick feedback, and launching useful tools one release at a time.
+          </p>
+          <HumanStoryStrip />
         </motion.div>
 
         {/* Timeline */}

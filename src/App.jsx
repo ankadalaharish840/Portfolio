@@ -1,4 +1,4 @@
-import { useState, useEffect, createContext, useContext } from 'react'
+import { useState, useEffect, createContext, lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import ScrollToTop from './components/ScrollToTop'
@@ -8,13 +8,22 @@ import ContactPage from './pages/ContactPage'
 import PrivacyPage from './pages/PrivacyPage'
 import NotFoundPage from './pages/NotFoundPage'
 import ProjectsIndexPage from './pages/projects/ProjectsIndexPage'
-import ExpenseTrackerPage from './pages/projects/ExpenseTrackerPage'
-import FileFlingrPage from './pages/projects/FileFlingrPage'
-import CashClownPage from './pages/projects/CashClownPage'
-import ProjectLegalDocumentPage from './pages/projects/ProjectLegalDocumentPage'
-import AdminDashboardPage from './pages/AdminDashboardPage'
+
+const ExpenseTrackerPage = lazy(() => import('./pages/projects/ExpenseTrackerPage'))
+const FileFlingrPage = lazy(() => import('./pages/projects/FileFlingrPage'))
+const CashClownPage = lazy(() => import('./pages/projects/CashClownPage'))
+const ProjectLegalDocumentPage = lazy(() => import('./pages/projects/ProjectLegalDocumentPage'))
+const AdminDashboardPage = lazy(() => import('./pages/AdminDashboardPage'))
 
 export const ThemeContext = createContext({ darkMode: false, toggleDark: () => {} })
+
+function RouteFallback() {
+  return (
+    <div className="min-h-[55vh] flex items-center justify-center px-4">
+      <div className="card px-5 py-4 text-sm text-slate-600 dark:text-slate-300">Loading page...</div>
+    </div>
+  )
+}
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -31,20 +40,22 @@ export default function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Layout>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/projects" element={<ProjectsIndexPage />} />
-            <Route path="/projects/expense-tracker" element={<ExpenseTrackerPage />} />
-            <Route path="/projects/fileflingr" element={<FileFlingrPage />} />
-            <Route path="/projects/cashclown" element={<CashClownPage />} />
-            <Route path="/projects/:projectId/privacy" element={<ProjectLegalDocumentPage documentType="privacy" />} />
-            <Route path="/projects/:projectId/terms" element={<ProjectLegalDocumentPage documentType="terms" />} />
-            <Route path="/studio-release-control-lcl-9a7f" element={<AdminDashboardPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
+          <Suspense fallback={<RouteFallback />}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/projects" element={<ProjectsIndexPage />} />
+              <Route path="/projects/expense-tracker" element={<ExpenseTrackerPage />} />
+              <Route path="/projects/fileflingr" element={<FileFlingrPage />} />
+              <Route path="/projects/cashclown" element={<CashClownPage />} />
+              <Route path="/projects/:projectId/privacy" element={<ProjectLegalDocumentPage documentType="privacy" />} />
+              <Route path="/projects/:projectId/terms" element={<ProjectLegalDocumentPage documentType="terms" />} />
+              <Route path="/studio-release-control-lcl-9a7f" element={<AdminDashboardPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Suspense>
         </Layout>
       </BrowserRouter>
     </ThemeContext.Provider>

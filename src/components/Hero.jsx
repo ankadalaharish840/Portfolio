@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useRef } from 'react'
+import { FounderPortrait } from './HumanVisuals'
 
 /* ── Mascot Robot ── */
 function RobotMascot() {
@@ -271,7 +272,10 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.3, type: 'spring' }}
             className="flex flex-col items-center gap-8 hidden lg:flex"
           >
-            <RobotMascot />
+            <div className="grid gap-6">
+              <RobotMascot />
+              <FounderPortrait className="max-w-md" />
+            </div>
             
             {/* Fun tagline with character */}
             <motion.div 

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { getAllProjectContent } from '../data/projectContent'
+import { AnimatedProjectThumbnail } from './HumanVisuals'
 
 export const ALL_PROJECTS = [
   {
@@ -76,6 +77,8 @@ function ProjectCard({ project }) {
       <div className="p-5 flex flex-col flex-1">
         <p className="text-slate-500 dark:text-slate-400 text-sm mb-3 italic">"{tagline}"</p>
         <p className="text-slate-700 dark:text-slate-300 text-sm mb-4 line-clamp-2 flex-1">{project.description}</p>
+
+        <AnimatedProjectThumbnail projectId={project.id} />
 
         <div className="flex flex-wrap gap-1.5 mb-4">
           {features.slice(0, 4).map((feature) => (

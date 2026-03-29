@@ -2,6 +2,7 @@ import { useEffect, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import ProjectLegalPanel from '../../components/ProjectLegalPanel'
+import { ProjectMotionPreview } from '../../components/HumanVisuals'
 import { getProjectContent } from '../../data/projectContent'
 
 const defaultFeatureDetails = {
@@ -59,6 +60,10 @@ export default function CashClownPage() {
               </Link>
             </div>
           </div>
+        </motion.div>
+
+        <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.06 }} className="mb-10">
+          <ProjectMotionPreview projectId="cashclown" />
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="mb-10">
